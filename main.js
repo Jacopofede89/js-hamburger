@@ -1,11 +1,15 @@
-const menuRight = document.querySelector('.header-right > a');
-const menuHamburger = document.querySelector('hamburger-menu');
+const menuRight     = document.querySelector('.header-right > a');
+const menuHamburger = document.querySelector('.hamburger-menu');
+const closeButton   = document.querySelector('.close');
 
+menuRight.addEventListener("click", 
+    function() { 
+       menuHamburger.classList.add('active');
+    }
+);
 
-menuRight.addEventListener("click",
-     
-   function(){
-       
-    document.getElementById(".header-right > a").style.display = "block"
-}
+closeButton.addEventListener("click", 
+    function() { 
+       menuHamburger.classList.remove('active');
+    }
 );
