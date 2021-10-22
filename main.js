@@ -1,9 +1,11 @@
-const menuRight = document.getElementById("hamburger-menu");
+const menuRight = document.querySelector('.header-right > a');
+const menuHamburger = document.querySelector('hamburger-menu');
+
 
 menuRight.addEventListener("click",
      
    function(){
        
-    document.getElementById("hamburger-menu").style.display = "block"
+    document.getElementById(".header-right > a").style.display = "block"
 }
 );
